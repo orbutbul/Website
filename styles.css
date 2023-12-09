@@ -238,6 +238,7 @@ body{
 .seedForm >*{
     text-align: center;
     font-size: 1.4rem;
+    margin-top: .75rem;
     padding: .75rem;
     border-radius: 2rem;
     width: 40%;
@@ -253,6 +254,7 @@ body{
     text-align: center;
     font-size: 1.1rem;
     line-height: 1.65rem;
+    overflow-y: scroll;
 }
 .readMore{
     grid-row:5/ span 1;
@@ -374,7 +376,7 @@ textarea{
     }
     .gems-description{
         font-size: 1.2rem;
-        line-height: 1.4rem;
+        line-height: 1.5rem;
         overflow: scroll;
     }
     .contact{
@@ -396,4 +398,8 @@ textarea{
     }
     
 
+}
+#copyright{
+    text-align: center;
+    color:var(--main-secondary)
 }

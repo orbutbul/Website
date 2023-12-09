@@ -1,11 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- TODO
-    -center contact form
-    -name and then email under
-    -fix the lets talk under the contact form
-- fix gems description
--recompile gems program for enable damping -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -55,7 +49,7 @@
             <div class="panel intro">
                 <h1 class="hello" id="hello">Hello,</h1>
                 <h1 class="myName-mobile">I'm Or</h1>
-                <img src="/Public/Imgs/Me.jpg" class="me">
+                <img src="/Public/Imgs/uv.jpeg" class="me">
                 <div class="socials">
                     <a href="https://www.instagram.com/mr.butbul/" target="_blank"><img class="social-link" src="/Public/Imgs/instagram.svg" ></a>
                     <a href="https://open.spotify.com/user/cqacmxhbrrjvluc5mw2q39klt?si=b1bc221c19364241&nd=1" target="_blank"><img class="social-link" src="/Public/Imgs/spotify.svg"></a>
@@ -65,11 +59,9 @@
             </div>
             <div class="panel abtme">
                 <h1 class="myName">I'm Or</h1>
-                <p class="descript">I'm an enthusiastic computer science student with an inclination for technology and its creative expression. Im very interested in shading languages and computer graphics. 
-                <br>
-                outside of computer science I love <a href="https://www.goodreads.com/user/show/139088794-or">reading</a> anything sci-fi to anything about logic/ philosophy, as well as video games. 
-                <br>
-                please scroll to see my GEMS project below!
+                <p class="descript">
+
+                Im a Computer Science student with an interest in Graphics, Unity, Quantum Computing, Software engineering, and anything Programming.
                 </p>
             </div>
         </section>
@@ -87,20 +79,17 @@
             <div class="panel gems-description-panel">
                 <p class="gems-description">
                     
-                    the GEMS (generative expression of modeled shapes) project has been a fun summer project for me.
-                    all you need to do is enter any 10 letters and/ or numbers to generate a 3D shape or "gem" with its own custom shader.
+                    The GEMS project has been a fun summer project for me, focusing on shader development, webGL in Javascript, Three.Js, and procedural development. A custom shader is mapped onto a random 3D object 
+                    
                     <br><br>
-                    In a brief explanation, the input value or the seed gets many of its properties examined. The most common number within the seed, the divisibility of the seed under certain values,
-                    its digit sum, and other properties all get measured to see what properties they will have on the shape like how many
-                    colors the gem will have or how the textures will be blended together. If you would like an in depth explanation on the gems project
-                    please click the following button.
+                    In a brief explanation. The input value is converted to a number in base-36. Then many of its properties are tested and matched with attributes of the shader. For example, the remainder of the number divided by 3 will determine one of the textures used in the object, or the most common digit being used to determine the amount of colors in the object. 
                     <br><br>
+                    To generate some objects, try typing a value in the text box labeled seed. Some of my favorite seed values have been <strong>Gems, Plox, 1234567890, Spring, 6o4sfs</strong>
 
-                <!-- <input type="submit" value="Read More" class="readMore"></input> -->
             </div>
         </section>
 
-        <h2 class="letstalk">Let's talk</h2>
+        <h2 class="letstalk">Let's talk!</h2>
         <div class="page-break"></div>
 
         <section class="page contact">
@@ -128,6 +117,7 @@
         </section>
 
         <div class="page-break"></div>
+        <footer id="copyright">Or Butbul © 2023</footer>
 
 
     </div>
