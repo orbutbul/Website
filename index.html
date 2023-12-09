@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- TODO
+    -center contact form
+    -name and then email under
+    -fix the lets talk under the contact form
+- fix gems description
+-recompile gems program for enable damping -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hey!</title>
+    <link rel="icon" type="image/x-icon" href="/Public/Imgs/favicon.ico">
+
+
+    <link rel="stylesheet" href="Andy-Bell-Reset.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="/main.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div class="nav-bar-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="#gems-page" class="nav-link">Projects</a>
+            <a href="#contact-Name" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-bar-icon">
+            <svg id="DiamondLeft" width="13" height="6" viewBox="0 0 13 6" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.712 3L7.97482 0.276441L12.5141 3L7.97482 5.72356L0.712 3Z" stroke="black"
+                    stroke-width=".75" />
+            </svg>
+            <svg id="Mainline" width="100%" height="2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="0%" y1="0" x2="100%" y2="0" stroke="black" stroke-width="1.5" />
+            </svg>
+            <svg id="DiamondRight" width="13" height="6" viewBox="0 0 13 6" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.288 3L5.02518 5.72356L0.485913 3L5.02518 0.276441L12.288 3Z" stroke="black"
+                    stroke-width=".75" />
+            </svg>
+        </div>
+    </nav>
+    <div class="container">
+        <section class="page home">
+            <div class="panel intro">
+                <h1 class="hello" id="hello">Hello,</h1>
+                <h1 class="myName-mobile">I'm Or</h1>
+                <img src="/Public/Imgs/Me.jpg" class="me">
+                <div class="socials">
+                    <a href="https://www.instagram.com/mr.butbul/" target="_blank"><img class="social-link" src="/Public/Imgs/instagram.svg" ></a>
+                    <a href="https://open.spotify.com/user/cqacmxhbrrjvluc5mw2q39klt?si=b1bc221c19364241&nd=1" target="_blank"><img class="social-link" src="/Public/Imgs/spotify.svg"></a>
+                    <a href="http://discordapp.com/users/203633008907911168" target="_blank"><img class="social-link" src="/Public/Imgs/discord.svg"></a>
+                    <a href="https://github.com/orbutbul"target="_blank"><img class="social-link" src="/Public/Imgs/github.svg"></a>
+                </div>
+            </div>
+            <div class="panel abtme">
+                <h1 class="myName">I'm Or</h1>
+                <p class="descript">I'm an enthusiastic computer science student with an inclination for technology and its creative expression. Im very interested in shading languages and computer graphics. 
+                <br>
+                outside of computer science I love <a href="https://www.goodreads.com/user/show/139088794-or">reading</a> anything sci-fi to anything about logic/ philosophy, as well as video games. 
+                <br>
+                please scroll to see my GEMS project below!
+                </p>
+            </div>
+        </section>
+
+        <div class="page-break"></div>
+
+        <section class="page "id="gems-page">
+            <div class="panel" id="gemsDisplay">
+                <form class="seedForm">
+                    <input type="text" id="seedId" maxlength="10" minlength="1" placeholder="Seed" oninput="validateInput(this)" required>
+                    <input type="submit" value="Generate" id="submitBtn">
+                </form>
+                <script src="/index-2163b072.js"></script>
+            </div>
+            <div class="panel gems-description-panel">
+                <p class="gems-description">
+                    
+                    the GEMS (generative expression of modeled shapes) project has been a fun summer project for me.
+                    all you need to do is enter any 10 letters and/ or numbers to generate a 3D shape or "gem" with its own custom shader.
+                    <br><br>
+                    In a brief explanation, the input value or the seed gets many of its properties examined. The most common number within the seed, the divisibility of the seed under certain values,
+                    its digit sum, and other properties all get measured to see what properties they will have on the shape like how many
+                    colors the gem will have or how the textures will be blended together. If you would like an in depth explanation on the gems project
+                    please click the following button.
+                    <br><br>
+
+                <!-- <input type="submit" value="Read More" class="readMore"></input> -->
+            </div>
+        </section>
+
+        <h2 class="letstalk">Let's talk</h2>
+        <div class="page-break"></div>
+
+        <section class="page contact">
+            <div class="panel">
+                <form  class="contact-form" action="https://formsubmit.co/contact@orbutbul.dev" method="POST" autocomplete="on">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="_honey" style="display:none">
+
+                        <input type="text" name="name" placeholder="Name" id="contact-Name" required>
+
+                        <input type="text" name="email" placeholder="E-mail"id="contact-Email"required>
+
+                        <textarea name="message" placeholder="Message" id="contact-Message"required></textarea>
+                    <button name="submit" type="submit">Send</button>
+                </form>
+            </div>
+            <div class="panel" style="height:30vh;">
+                <div class="socials-square">
+                    <a href="https://www.instagram.com/mr.butbul/" target="_blank"><img class="social-link" src="/Public/Imgs/instagram.svg" ></a>
+                    <a href="https://open.spotify.com/user/cqacmxhbrrjvluc5mw2q39klt?si=b1bc221c19364241&nd=1" target="_blank"><img class="social-link" src="/Public/Imgs/spotify.svg"></a>
+                    <a href="http://discordapp.com/users/203633008907911168" target="_blank"><img class="social-link" src="/Public/Imgs/discord.svg"></a>
+                    <a href="https://github.com/orbutbul"target="_blank"><img class="social-link" src="/Public/Imgs/github.svg"></a>
+                </div>
+            </div>
+        </section>
+
+        <div class="page-break"></div>
+
+
+    </div>
+    <p style="height:30vh;"></p>
+</body>
+
+</html>
